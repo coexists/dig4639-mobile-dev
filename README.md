@@ -8,3 +8,7 @@ The *ice* folder contains in-class exercises.
 Soon to be graduate looking to use skills in communication, design, and management skills. Seeking a position in areas of front-end development and UI/UX design, in order to use design and creativity skills.
 
 [Website](vickyleon.me)
+
+## Conflicts
+
+This section represents code on the server that isn't in a local repository.
