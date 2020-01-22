@@ -1,0 +1,31 @@
+DUOLINGO
+
+What information does it need in order to complete the work?
+•	User needs to sign up/log in in order to select a language that they would like to learn
+•	Once an account is created the user there is one single main screen that scrolls with bubbles that shows the different topics. 
+What is the result of the work?
+•	Once the user is logged on
+•	There is a bottom menu with four different options.
+•	Main section
+•	Profile
+•	Achievements 
+•	friends
+•	Leaderboard - Scrolls
+•	Shop
+•	Settings - swipe up animation
+Pseudocode 
+Open App
+Create an account or log in to account
+Input information into a form
+Information is validated and saved on the server
+Once information is validated, user will have access to the app functions
+Select the language from an array
+Select lesson from an array
+Lessons records user input and tracks progress
+Progress happens on one constantly changing page
+When progress bar reaches completion the app switches to completion page and moves back to main lesson page, unlocking another section of the language learning process. Data is uploaded to server on lesson completion and throughout the lesson.
+
+Github Usernames
+Leunk
+Mscarangella
+coexists
