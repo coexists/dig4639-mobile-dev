@@ -7,4 +7,9 @@ The *ice* folder contains in-class exercises.
 ## Statement
 Soon to be graduate looking to use skills in communication, design, and management skills. Seeking a position in areas of front-end development and UI/UX design, in order to use design and creativity skills.
 
-[Website](vickyleon.me)
+[Website](http://www.vickyleon.me)
+
+## Merging
+1. Item 1 [Google](http://www.google.com)
+1. Item 2
+1. Item 3
