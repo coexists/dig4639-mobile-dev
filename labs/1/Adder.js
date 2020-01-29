@@ -7,7 +7,7 @@ class Adder {
         return(this.a + this.b);
         }
     render(){
-        let calculation = `The sum of ${this.a} and ${this.b} is ${this.sum()}`
+        let calculation = <p>The sum of ${this.a} and ${this.b} is ${this.sum()}</p>
         console.log(calculation);
     }
 }
