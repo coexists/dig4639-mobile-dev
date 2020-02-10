@@ -60,3 +60,9 @@ var myIdentity = myDog.getIdentity;
 myIdentity();
 myDog.getIdentity();
 // console.log(myDog.getSum(10,20))
+
+
+
+// in terminal
+// npx create-react-app (DIR NAME)
+// it will create a subdirectory
