@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 
+<<<<<<< HEAD
 function Square(props) {
     return (
       <button className="square" onClick={props.onClick}>
@@ -31,6 +32,24 @@ function Square(props) {
         onClick={() => this.handleClick(i)}
         />
       );
+=======
+class Square extends React.Component {
+    render() {
+      return (
+        <button className="square" onClick={() => {
+            console.log(this);
+            alert("Click"+this.props.value)
+            }}>
+          {this.props.value}
+        </button>
+      );
+    }
+  }
+  
+  class Board extends React.Component {
+    renderSquare(i) {
+      return <Square value={i} />;
+>>>>>>> 6f891273215063c129ed0f0fb8bda3dea399f3e7
     }
   
     render() {
@@ -81,5 +100,8 @@ function Square(props) {
     <Game />,
     document.getElementById('root')
   );
+<<<<<<< HEAD
   
+=======
+>>>>>>> 6f891273215063c129ed0f0fb8bda3dea399f3e7
   

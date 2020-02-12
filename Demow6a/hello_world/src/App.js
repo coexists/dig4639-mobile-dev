@@ -4,23 +4,30 @@ import './App.css';
 
 function NameBadge(props) {
   console.log(props);
-  return <p>My Name is {props.name}</p>
+  return ( 
+    <p>My name is {props.name}</p>
+  )
 }
+
 class App extends React.Component {
-  clickHandler() {
-    alert("Clicked");
+  clickHandler(e) {
+    alert("Clicked +");
+    console.log(this);
+    console.log(e);
   }
   render() {
   return (
     <div className="App">
       <header className="App-header">
-        <div onClick={() => alert("BORK BORK")}>
-      <img src="https://i.imgur.com/CG2F2dt.jpg" className="App-logo" alt="logo" />
-      </div>
+        <div  onClick={this.clickHandler}>
+          <img src={logo} className="App-logo" alt="logo" />
+        </div>
         <p>
-          OwO
+          Hello World 
         </p>
-        <NameBadge name = "Hank" />
+        <NameBadge name="John"/>
+        <NameBadge name="Ana"/>
+        <NameBadge name="June"/>
         <a
           className="App-link"
           href="https://reactjs.org"

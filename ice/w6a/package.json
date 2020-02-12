@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
   "name": "w64",
+=======
+  "name": "w6a",
+>>>>>>> 6f891273215063c129ed0f0fb8bda3dea399f3e7
   "version": "0.1.0",
   "private": true,
   "dependencies": {
