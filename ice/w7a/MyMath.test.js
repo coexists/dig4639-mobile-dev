@@ -1,9 +1,24 @@
-import { Sum } from './sum.js'
+import { Sum } from './MyMath.js'
+
+
+describe("Sum", () => {
 
 test('adds 1 + 2 to equal 3', () => {
-  expect(Sum(1, 2)).toBe(3)
-})
+  expect(Sum(1, 2, 3, 4)).toBe(10)
+  })
 
+//test('test if invalid type', () => {
+  //expect(Sum(1, "Test")).toBeUndefined()
+  //})
+
+test('adds 1 + 2 + 3 + 4 to equal 10', () => {
+  expect(Sum(1, 2)).toBe(3)
+  })
+
+it('Makes the sum of 10 + 20 equal to 30', () => {
+  expect(Sum(10, 20)).toBe(30)
+  })
+})
 // ICE 
 
 // Examples for Null
@@ -25,3 +40,4 @@ test('zero', () => {
   expect(z).not.toBeTruthy()
   expect(z).toBeFalsy()
 })
+
