@@ -1,15 +1,25 @@
 import React from 'react';
 import './App.css';
+import Card from './components/Card';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
+class App extends React.Component{
+
+  render() {
+    return (
+      <body>
+    <div>
+      <Card content="This is a card!" />
+
+      <Card content="This is another card! Woah so much content can fit here" />
+
+      <Card content="Another 'Another card'" />
       
-      </header>
     </div>
+    </body>
+    
+        
   );
 }
-
+}
 export default App;
 

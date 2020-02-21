@@ -1,18 +1,17 @@
-import "./index.css"
+import React from "react";
+import "./index.css";
 
-class Card {
-    constructor(props) {
-        this.props = props;
-        this.element = document.createElement("div");
-        let span = document.createElement("span");
-        this.element.appendChild(span);
-        span.innerHTML = this.props.content;
-        this.element.className = "card";
-    }
+//example wk7 JSX: Stricter HTML
+class Card extends React.Component {
+    render(){
+        return(
 
-    render() {
-        return this.element;
+            <div className = "card">
+                {this.props.content} 
+            </div>
+            
+
+        )
     }
 }
-
 export default Card;
