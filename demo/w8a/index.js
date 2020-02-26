@@ -1,4 +1,5 @@
 const myArray = [2, 5, 8, 20, 18]
+
 console.log(myArray)
 
 let sum = 0
@@ -14,7 +15,7 @@ for (const item of myArray) {
 }
 console.log(sum)
 
-// divde each element
+// divide each element
 console.log('before', myArray)
 for (let index = 0; index < myArray.length; index++) {
   myArray[index] = myArray[index] / 2
