@@ -1,7 +1,6 @@
 import React from 'react';
 import CardList from './components/CardList';
 
-//render CardList in div, pull App className
 class App extends React.Component {
   render() {
     return (
