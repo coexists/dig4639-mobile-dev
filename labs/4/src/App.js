@@ -5,7 +5,7 @@ import CardList from './components/CardList';
 class App extends React.Component {
   render() {
     return (
-      <div className ="App">
+      <div>
       <CardList />
       </div>
 
