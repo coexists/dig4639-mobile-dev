@@ -1,6 +1,7 @@
 import React from "react";
 import "./index.css";
 
+
 //Aesthetic Cards
 class Card extends React.Component {
     render(){

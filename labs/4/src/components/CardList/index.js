@@ -3,7 +3,6 @@ import Card from "../Card/";
 import data from "../../data.json";
 //import is different for data.json
 
-
 class CardList extends React.Component {
 
     constructor(props) {
@@ -44,5 +43,4 @@ class CardList extends React.Component {
       );
     }
   }
-  
   export default CardList;
