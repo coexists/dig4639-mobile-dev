@@ -1,0 +1,27 @@
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    max-width: 300px;
+    margin: auto;
+    margin-top: 20px;
+    text-align: center;
+    padding: 10px;
+    background-color: rgb(67, 238, 181);
+    border-style: double;
+    border-color: rgb(216, 81, 132);
+    border-width: 12px;
+}
+body {
+    background-image: linear-gradient(to bottom right,rgb(152, 60, 160), rgb(37, 198, 204));
+}
+h1 {
+    font-family: Comic Sans Ms;
+    color: rgb(0, 42, 156);
+}
+h2 {
+      font-family: Comic Sans Ms;
+      color: rgb(182, 60, 219);
+}
+p {
+    font-family: Comic Sans Ms;
+    color: rgb(228, 20, 193);
+}
