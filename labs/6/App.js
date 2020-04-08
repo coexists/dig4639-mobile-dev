@@ -7,7 +7,7 @@ const TITLE_STATE = 0
 const QUESTION_STATE = 1
 const FINAL_STATE = 2
 
-class QuizQuestion extends React.Component{
+class QuestionOnQuiz extends React.Component{
   render(){
     return<>
     <Text style = {styles.questext}>{this.props.question}</Text>
@@ -44,7 +44,6 @@ class TitlePage extends React.Component{
       clearInterval(this.timer)
       console.log(this.state.currentQuestion)
       this.setState({
-        titleText : "You answered X",
         currentState : QUESTION_STATE,
         currentQuestion : this.state.currentQuestion + 1
         
@@ -59,7 +58,6 @@ class TitlePage extends React.Component{
         counter : this.state.counter + 1
       })
     }
-    
     else{
       this.setState({
         titleText: "Beginning Quiz!",
@@ -84,7 +82,7 @@ class TitlePage extends React.Component{
   render(){
     return(
       <>
-      <Text>{this.timeLimit - this.state.counter}</Text>
+      <Text style = {styles.timer}>{this.timeLimit - this.state.counter}</Text>
       {((this.state.currentState === TITLE_STATE) 
         ? <>
         <Text style = {styles.questext}>{this.state.titleText}</Text>
@@ -92,7 +90,7 @@ class TitlePage extends React.Component{
         </>
         : (this.state.currentState === FINAL_STATE)
         ? <Text style = {styles.questext}>Complete! You Scored: {this.state.score}</Text>
-        : <QuizQuestion
+        : <QuestionOnQuiz
             answers={questions[this.state.currentQuestion].chosenAnswers} 
             question={questions[this.state.currentQuestion].question} 
             questionUp={(correct) => this.questionUp(correct)} />
@@ -131,8 +129,8 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
   buttonText: {
-    color: "#FFFFFF",
-    fontSize: 15,
+    color: "#419e9b",
+    fontSize: 20,
   },
   start: {
     alignItems: "center",
@@ -153,13 +151,19 @@ const styles = StyleSheet.create({
     margin: 10,
   },
   scores: {
-    color: "#460578",
+    color: "#e8810c",
     fontSize: 20,
     padding: 10
   },
 questext: {
     color: "#32a8a4",
     fontSize: 20,
+    padding: 10
+  }
+  ,
+timer: {
+    color: "#e8810c",
+    fontSize: 30,
     padding: 10
   }
 
