@@ -1,0 +1,93 @@
+[
+    {
+        "question": "In Animal Crossing New Horizons, all of these fruits are found except:",
+        "chosenAnswers":
+        [
+            {
+                "text" : "Lemons",
+                "correct" : true
+            },
+            {
+                "text": "Cherries",
+                "correct": false
+            },
+            {
+                "text": "Apples",
+                "correct": false
+            },
+            {
+                "text": "Oranges",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "All of these are Animal Personality types except:",
+        "chosenAnswers": 
+        [
+            {
+                "text": "Smug",
+                "correct": false
+            },
+            {
+                "text": "Cool",
+                "correct": true
+            },
+            {
+                "text": "Smug",
+                "correct": false
+            },
+            {
+                "text": "Peppy",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "The Bunny Day Event is the best event?",
+        "chosenAnswers": [
+            {
+                "text": "Yes!",
+                "correct": false
+            },
+            {
+                "text": "No more eggs please...",
+                "correct": true
+            }
+        ]
+    },
+    {
+        "question": "Raymond is a new Villager seen in Animal Crossing New Horizons. T or F?",
+        "chosenAnswers": [
+            {
+                "text": "False",
+                "correct": false
+            },
+            {
+                "text": "True",
+                "correct": true
+            }
+        ]
+    },
+    {
+        "question": "How many games exist in the Animal Crossing Series?",
+        "chosenAnswers": [
+            {
+                "text": "3",
+                "correct": false
+            },
+            {
+                "text": "7",
+                "correct": false
+            },
+            {
+                "text": "5",
+                "correct": true
+            },
+            {
+                "text": "2",
+                "correct": false
+            }
+        ]
+    }
+]
