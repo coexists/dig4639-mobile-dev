@@ -13,14 +13,8 @@ class App extends React.Component{
         <div class="see">
           <div class="list">
           <ContactsList />
-          </div>
-          <div class="add">
           <ContactsAdd />
-          </div>
-          <div class="profile">
           <Profile />
-          </div>
-          <div class="remove">
           <ContactsRemove />
           </div>
         </div>
