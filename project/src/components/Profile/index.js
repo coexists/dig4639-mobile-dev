@@ -4,28 +4,25 @@ class Profile extends React.Component {
 
   constructor(props) {
     super(props);
-
     this.state = {profile: []};
-
   }
 
   componentDidMount() {
-
     fetch("http://plato.mrl.ai:8080/profile", {headers: {API: "leon"}})
     .then((res) => res.json())
     .then((data) => {
         console.log(data)
       this.setState({profile:[data]});
     });
-
   }
 
   render() {
     return (
-      <div> <h2>Profile List</h2>
+      <div> 
+        <h2>Number of Contacts in Contacts List!</h2>
         { 
         this.state.profile.map((value, index) => {
-          return <p key={index}> {value.name}, {value.count}</p> ;
+          return <h1 key={index}> {value.count}</h1>
         })
        }
       </div>

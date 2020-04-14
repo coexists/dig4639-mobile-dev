@@ -10,13 +10,11 @@ class App extends React.Component{
   return (
     <body>
       <div class="center">
-        <div class="see">
           <div class="list">
           <ContactsList />
           <ContactsAdd />
           <Profile />
           <ContactsRemove />
-          </div>
         </div>
       </div>
     </body>

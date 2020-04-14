@@ -7,16 +7,12 @@ body {
   width: 50%;
   border: 10px;
 }
-.see {
-  font-family: Comic Sans Ms;
- 
-}
 
 .list {
   color: blueviolet;
   background-color: rgb(255, 210, 251);
   padding: 10px;
-  
+  font-family: Comic Sans Ms;
   -webkit-animation:colorchange 8s infinite alternate;
       
       

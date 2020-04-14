@@ -13,19 +13,15 @@ class ContactsAdd extends React.Component {
   constructor(props) {
     super(props);
 
-    //set input reference 
     this.textInput = React.createRef();
     this.textInput2 = React.createRef();
 
-    //track value of input state 
     this.state = {
       value: '',
       value2: ''
     }
   }
 
-
-        //send header body 
       newVal= () => {
         let newHeaders = {...HEADERS,
           "method" : "POST",
@@ -43,7 +39,6 @@ class ContactsAdd extends React.Component {
         , [])
       }
 
-//on submit event prevent default and run function 
   handleSubmit = e => {
     e.preventDefault();
     this.newVal()
