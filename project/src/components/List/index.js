@@ -7,19 +7,17 @@ class List extends React.Component {
   }
 
   componentDidMount() {
-
     fetch("http://plato.mrl.ai:8080/contacts", {headers: {API: "leon"}})
     .then((res) => res.json())
     .then((data, ) => {
         console.log(data)
       this.setState({contacts: data.contacts});
     });
-
   }
 
   render() {
     return (
-      <div> <h2 id="top">CoNtAcT LiSt</h2>
+      <div> <h2 id="top">Contact List</h2>
        {
          this.state.contacts.map((value, index) => {
            return <p key={index}>Name:{value.name} <br />Phone Number: {value.number}</p>;
