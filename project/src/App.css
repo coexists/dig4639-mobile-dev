@@ -1,75 +1,65 @@
 body {
-  background-color: rgb(255, 217, 0);
-  
+  background-color: rgb(255, 217, 0); 
 }
 .center {
   margin: auto;
   width: 50%;
-  border: 10px;
 }
 
 .list {
-  color: blueviolet;
   background-color: rgb(255, 210, 251);
-  padding: 10px;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  -webkit-animation:colorchange 8s infinite alternate; 
+}
+@keyframes colorchange {
+  from {background-color: rgb(246, 191, 248);}
+  to {background-color: rgb(236, 160, 60);}
+  to {background-color: rgb(95, 236, 60);}    
+}
+h1 {
+  color: rgb(46, 43, 226);
   font-family: Comic Sans Ms;
-  -webkit-animation:colorchange 8s infinite alternate;
-      
-      
+}
+h2 {
+  color: blueviolet;
+  font-family: Comic Sans Ms;
+}
+#top{
+  font-size: 38px;
 }
 
-@keyframes colorchange {
-  0% {
-    
-    color: blue;
-  }
-  
-  10% {
-    
-    color: #8e44ad;
-  }
-  
-  20% {
-    
-    color: #1abc9c;
-  }
-  
-  30% {
-    
-    color: #d35400;
-  }
-  
-  40% {
-    
-    color: blue;
-  }
-  
-  50% {
-    
-    color: #34495e;
-  }
-  
-  60% {
-    
-    color: blue;
-  }
-  
-  70% {
-    
-    color: #2980b9;
-  }
-  80% {
- 
-    color: #f1c40f;
-  }
-  
-  90% {
- 
-    color: #2980b9;
-  }
-  
-  100% {
-    
-    color: pink;
-  }
+p {
+  color: rgb(226, 43, 144);
+  font-family: Comic Sans Ms;
+  font-size: 1.3em;
+  background-color: cyan;
+}
+
+label {
+  color: rgb(46, 43, 226);
+  font-family: Comic Sans Ms;
+  font-size: 1.2em;
+}
+
+input[type=text] {
+  font-family: Comic Sans Ms;
+  border: 4px solid rgb(231, 180, 11);
+  border-style: inset;
+  border-radius: 4px;
+  width: 50%;
+  padding: 10px;
+  margin: 10px;
+  box-sizing: border-box;
+}
+button {
+  background-color: rgb(20, 239, 255);
+  color: rgb(183, 0, 255);
+  padding: 12px 15px;
+  border: 5px;
+  border-style: inset;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: Comic Sans MS;
 }

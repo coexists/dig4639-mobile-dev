@@ -1,8 +1,8 @@
 import React from 'react';
 import Profile from './components/Profile';
-import ContactsAdd from './components/contactsAdd';
-import ContactsList from './components/contactsList';
-import ContactsRemove from './components/contactsRemove';
+import Add from './components/Add';
+import List from './components/List';
+import Remove from './components/Remove';
 import './App.css';
 
 class App extends React.Component{
@@ -11,14 +11,14 @@ class App extends React.Component{
     <body>
       <div class="center">
           <div class="list">
-          <ContactsList />
-          <ContactsAdd />
+          <List />
+          <Add />
           <Profile />
-          <ContactsRemove />
+          <Remove />
         </div>
       </div>
     </body>
-  );
+    );
   }
 }
 

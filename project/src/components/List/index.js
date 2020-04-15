@@ -1,12 +1,9 @@
 import React from 'react';
 
-class ContactsList extends React.Component {
-
+class List extends React.Component {
   constructor(props) {
     super(props);
-
     this.state = {contacts: []};
-
   }
 
   componentDidMount() {
@@ -22,10 +19,10 @@ class ContactsList extends React.Component {
 
   render() {
     return (
-      <div> <h2>CoNtAcT LiSt</h2>
+      <div> <h2 id="top">CoNtAcT LiSt</h2>
        {
          this.state.contacts.map((value, index) => {
-           return <p key={index}>{value.name} , {value.number}</p>;
+           return <p key={index}>Name:{value.name} <br />Phone Number: {value.number}</p>;
          })
        }
       </div>
@@ -33,4 +30,4 @@ class ContactsList extends React.Component {
   }
 }
 
-export default ContactsList;
+export default List;
